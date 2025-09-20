@@ -1,0 +1,71 @@
+/* General Layout */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #1f3c58;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 36px;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* List Styling */
+.chart-list {
+  list-style: none;
+  padding: 0;
+}
+
+.chart-list li {
+  margin: 12px 0;
+}
+
+.chart-list a {
+  text-decoration: none;
+  color: #004d99;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.chart-list a:hover {
+  color: #ff6f61;
+  transform: translateX(5px);
+}
+
+/* Box Shadow & Hover Effects */
+.chart-list a:focus, .chart-list a:hover {
+  text-decoration: underline;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile-friendly */
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .chart-list a {
+    font-size: 16px;
+  }
+}
